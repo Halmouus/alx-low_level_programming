@@ -18,7 +18,7 @@ if (i == 9 && j == 9)
 putchar('\n');
 break;
 }
-if (i == j || (i + j == j + i && (i * 10) + j > (j * 10) + i))
+if (i == j || (i * 10) + j > (j * 10) + i)
 {
 j++;
 continue;

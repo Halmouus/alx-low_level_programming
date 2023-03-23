@@ -24,6 +24,6 @@ if (i < 100)
 printf(" ");
 i++;
 }
-printf("$");
+printf("\n");
 return (0);
 }

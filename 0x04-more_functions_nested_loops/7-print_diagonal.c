@@ -12,7 +12,7 @@ if (n > 0)
 while (n--)
 {
 i = a - n;
-while (i--)
+while (--i)
 {
 _putchar(' ');
 }

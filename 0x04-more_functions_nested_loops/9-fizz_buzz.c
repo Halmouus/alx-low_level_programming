@@ -9,7 +9,6 @@
 int main(void)
 {
 int i = 1;
-char c[10];
 while (i < 101)
 {
 if (i % 3 == 0 && i % 5 == 0)

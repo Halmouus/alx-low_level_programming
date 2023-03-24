@@ -8,9 +8,11 @@
  */
 int main(void)
 {
-long int n = 612852475143;
+long int n = -612852475;
 long int i = 2, j, m = 2, p = 0;
-while (i < n)
+if (n < 0)
+n = -n;
+while (i <= n)
 {
 p = 0;
 if (n % i == 0)
@@ -34,6 +36,9 @@ m = i;
 }
 i++;
 }
+if (n != 0 && n != 1)
 printf("%ld\n", m);
+else
+printf("\n");
 return (0);
 }

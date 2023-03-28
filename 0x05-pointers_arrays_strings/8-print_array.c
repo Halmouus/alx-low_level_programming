@@ -10,9 +10,9 @@
 void print_array(int *a, int n)
 {
 int i = 0;
-while (i <= (n - 1))
+while (i < n)
 {
-if (i > 0 && i < n)
+if (i > 0)
 {
 printf(", ");
 }

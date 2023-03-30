@@ -5,7 +5,7 @@
  * @str: string to be encoded
  * Return: pointer to the resulting string
  */
- 
+
 char *rot13(char *str)
 {
 char a1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

@@ -14,7 +14,7 @@ return (-1);
 else if (n < 2)
 return (n);
 else
-return (help(n / 2, n));
+return (help(0, n));
 }
 /**
  * help - returns the natural square root of a number
@@ -24,10 +24,10 @@ return (help(n / 2, n));
  */
 int help(int x, int n)
 {
-if (x * x < n)
+if (x * x > n)
 return (-1);
 else if (x * x == n)
 return (x);
 else
-return (help(x - 1, n));
+return (help(x + 1, n));
 }

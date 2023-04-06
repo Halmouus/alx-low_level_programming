@@ -11,9 +11,9 @@
 int palindrome_help(char *s, int b, int e);
 int is_palindrome(char *s)
 {
+int l = _strlen_recursion(s);
 if (*s == '\0')
 return (1);
-int l = _strlen_recursion(s);
 return (palindrome_help(s, 0, l));
 }
 /**

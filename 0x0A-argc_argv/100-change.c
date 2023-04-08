@@ -21,6 +21,10 @@ printf("Error\n");
 return (1);
 }
 am = atoi(argv[1]);
+if (am < 0)
+{
+printf("0\n");
+}
 if (am >= 0)
 {
 while (am)
@@ -34,7 +38,7 @@ count += am / *p;
 am = am % *p;
 p++;
 }
-}
 printf("%d\n", count);
+}
 return (0);
 }

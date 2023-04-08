@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -12,33 +12,27 @@ i#include "main.h"
  */
 int main(int argc, char **argv)
 {
-int count = 0, am;
+int rs, n, amt = 0;
 int change[] = {25, 10, 5, 2, 1};
-int *p = change;
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-am = atoi(argv[1]);
-if (am < 0)
+rs = atoi(argv[1]);
+if (rs < 0)
 {
 printf("0\n");
+return (0);
 }
-if (am >= 0)
+for (n = 0; n < 5 && rs >= 0; n++)
 {
-while (am)
+while (rs >= change[n])
 {
-if (am < *p)
-{
-p++;
-continue;
+amt++;
+rs -= change[n];
 }
-count += am / *p;
-am = am % *p;
-p++;
 }
-printf("%d\n", count);
-}
+printf("%d\n", amt);
 return (0);
 }

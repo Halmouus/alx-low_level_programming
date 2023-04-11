@@ -23,8 +23,6 @@ while (s2[size2])
 {
 size2++;
 }
-if ((size1 + size2) == 0)
-return (0);
 new_str = malloc(sizeof(char) * (size1 + size2 + 1));
 if (new_str == 0)
 return (0);

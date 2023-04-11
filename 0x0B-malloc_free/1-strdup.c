@@ -19,7 +19,7 @@ size++;
 }
 if (size == 0)
 return (0);
-new_str = malloc(sizeof(char) * size);
+new_str = malloc(sizeof(char) * (size + 1));
 if (new_str == 0)
 return (0);
 while (i <= size)

@@ -11,6 +11,8 @@ char *_strdup(char *str)
 {
 unsigned int size = 1, i = 0;
 char *new_str;
+if (str == 0)
+return (0);
 while (str[size])
 {
 size++;

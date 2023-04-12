@@ -25,7 +25,7 @@ j++;
 size++;
 i++;
 }
-str = malloc((size + 1) * sizeof(int));
+str = malloc(size * sizeof(int));
 if (str == 0)
 return (0);
 i = 0;

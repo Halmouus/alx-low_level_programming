@@ -20,25 +20,23 @@ while (name[lname])
 lname++;
 while (owner[lowner])
 lowner++;
-nname = malloc(sizeof(char) * (lname + 1));
-if (nname == NULL)
+ndog->name = malloc(sizeof(char) * (lname + 1));
+if (ndog->name == NULL)
 {
 free(ndog);
 return (NULL);
 }
-nowner = malloc(sizeof(char) * (lowner + 1));
-if (nowner == NULL)
+ndog->owner = malloc(sizeof(char) * (lowner + 1));
+if (ndog->owner == NULL)
 {
-free(nname);
+free(ndog->name);
 free(ndog);
 return (NULL);
 }
 for (i = 0; i <= lname; i++)
-nname[i] = name[i];
+ndog->name[i] = name[i];
 for (i = 0; i <= lowner; i++)
-nowner[i] = owner[i];
-ndog->name = name;
+ndog->owner[i] = owner[i];
 ndog->age = age;
-ndog->owner = owner;
 return (ndog);
 }

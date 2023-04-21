@@ -42,6 +42,6 @@ separator = ", ";
 i++;
 }
 }
-va_end(args);
 printf("\n");
+va_end(args);
 }

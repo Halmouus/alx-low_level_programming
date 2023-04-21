@@ -11,7 +11,7 @@
 void print_all(const char * const format, ...)
 {
 va_list args;
-char chr, *str;
+char chr, *str, *separator = "";
 float flt;
 int itgr, i = 0;
 va_start(args, format);
@@ -21,29 +21,30 @@ switch (format[i])
 {
 case 'c':
 chr = va_arg(args, int);
-printf("%c", chr);
+printf("%s%c", separator, chr);
 break;
 case 'i':
 itgr = va_arg(args, int);
-printf("%d", itgr);
+printf("%s%d", separator, itgr);
 break;
 case 'f':
 flt = va_arg(args, double);
-printf("%f", flt);
+printf("%s%f", separator, flt);
 break;
 case 's':
 str = va_arg(args, char*);
 if (str == NULL)
 {
-printf("(nil)");
+printf("%s(nil)", separator);
 break;
 }
-printf("%s", str);
+printf("%s%s", separator, str);
 break;
 default:
 break;
 }
 i++;
+separator = ", ";
 }
 printf("\n");
 }

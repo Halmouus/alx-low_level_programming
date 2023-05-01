@@ -8,7 +8,6 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-int data;
 listint_t *temp, *prev_node, *next_node;
 if (index == 0)
 {

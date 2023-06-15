@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * list_len - returns the number of elements in a doubly
+ * dlistint_len - returns the number of elements in a doubly
  * linked list
  * @h: pointer to header
  * Return: number of nodes

@@ -34,6 +34,8 @@ prev_node->next = new_node;
 new_node->n = n;
 new_node->next = next_node;
 new_node->prev = prev_node;
+if (next_node != NULL)
+next_node->prev = new_node;
 
 return (new_node);
 }

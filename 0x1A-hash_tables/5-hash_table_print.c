@@ -15,7 +15,7 @@ printf("{");
 for (index = 0; index < ht->size; index++)
 {
 temp = ht->array[index];
-while(temp)
+while (temp)
 {
 if (count)
 {

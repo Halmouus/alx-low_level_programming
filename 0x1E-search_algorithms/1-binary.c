@@ -50,7 +50,7 @@ int binary_search_alg(int *array, int start, int end, int value)
         }
     }
 
-    return -1;
+    return (-1);
 }
 
 /**
